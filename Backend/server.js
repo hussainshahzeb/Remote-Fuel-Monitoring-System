@@ -10,7 +10,7 @@ app.use(cors()); // Enable CORS for all routes and origins
 app.use(bodyParser.json()); // Body parser middleware
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://mwaqasakhtar101:uT8yu7UHJJhRmkCb@cluster0.wg4on3p.mongodb.net/sensorDB', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('your-mongo-url', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
