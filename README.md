@@ -25,8 +25,14 @@ The system consists of the following components:
 3. **Cloud (Firebase)**: Stores and manages data
 4. **Web Application (React.js)**: Displays real-time analytics
 
+## Usage
+- Connect the microcontroller to the fuel tank sensors.
+- Deploy the web application.
+- Monitor real-time fuel data from the dashboard.
+
 ## Installation
 ```sh
+
 # Clone the repository
 git clone https://github.com/yourusername/remote-fuel-monitoring.git
 
@@ -39,10 +45,4 @@ npm install  # For web application
 
 # Run the web application
 npm start
-
-## Usage
-```markdown
-- Connect the microcontroller to the fuel tank sensors.
-- Deploy the web application.
-- Monitor real-time fuel data from the dashboard.
 
