@@ -1,0 +1,111 @@
+/* Base styles */
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the entire component */
+.sensor-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.sensor-title {
+  color: #007bff;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Styles for individual sensor readings */
+.sensor-reading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.sensor-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.sensor-value {
+  color: #007bff;
+}
+
+/* Chart container styling to ensure it takes the full width and a fixed height */
+.chart-container {
+  position: relative;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+canvas {
+  padding: 10px;
+}
+
+.chart-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .sensor-reading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sensor-value {
+    margin-top: 5px;
+  }
+
+  .chart-container {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}
+
+.welcome-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../public/Images/Background.png') no-repeat center center fixed; /* Ensure this path is correct */
+  background-size: cover;
+  color: #ffffff; /* White color for text */
+  font-size: 3rem; /* Increased font size */
+  font-weight: bold; /* Bold font weight */
+  z-index: 1000;
+}
+
+.welcome-message:after {
+  content: '|';
+  opacity: 1;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}
